@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root prefHeight="577.0" prefWidth="1183.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="582.0" fitWidth="1183.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/trinitycollege.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="469.0" prefHeight="101.0" prefWidth="1165.0" text="In 1661, he went to Trinity College, where he discovered the binomial theorem and started to create calculus." textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+   </children>
+</fx:root>

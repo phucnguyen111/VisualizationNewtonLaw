@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="823.0" prefWidth="1476.0" style="-fx-background-color: #7ad9ff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hust.soict.globalict.firstlaw.FirstLawImplementController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffef95" height="268.0" layoutY="570.0" stroke="#ab9dff" strokeType="INSIDE" width="1495.0" />
+      <Button fx:id="pushToTheRightButton" layoutX="185.0" layoutY="672.0" mnemonicParsing="false" onAction="#pushToTheRight" prefHeight="77.0" prefWidth="174.0" stylesheets="@../main/application.css" text="Push to   the Right" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="pushToTheLeftButton" layoutX="1121.0" layoutY="672.0" mnemonicParsing="false" onAction="#pushToTheLeft" prefHeight="77.0" prefWidth="174.0" stylesheets="@../main/application.css" text="  Push to  the Left" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="resetButton" layoutX="651.0" layoutY="672.0" mnemonicParsing="false" onAction="#reset" prefHeight="77.0" prefWidth="174.0" stylesheets="@../main/application.css" text="Reset" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Button>
+      <Pane fx:id="snorlaxPane" layoutX="982.0" layoutY="3.0" prefHeight="373.0" prefWidth="484.0">
+         <children>
+            <ImageView fitHeight="175.0" fitWidth="246.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/chat1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="218.0" fitWidth="286.0" layoutX="176.0" layoutY="115.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/snorlax.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="37.0" layoutY="35.0" prefHeight="110.0" prefWidth="213.0" text="The ball stays at rest forever !" textFill="#3b8bab" wrapText="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="pikachuPane" layoutX="25.0" layoutY="20.0" prefHeight="327.0" prefWidth="521.0">
+         <children>
+            <ImageView fitHeight="243.0" fitWidth="174.0" layoutX="36.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/pikachu.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="181.0" fitWidth="269.0" layoutX="210.0" layoutY="14.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/chat2.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="238.0" layoutY="7.0" prefHeight="110.0" prefWidth="213.0" text="The ball will roll forever ! " textFill="#f8d300" wrapText="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="forceLabel" layoutX="238.0" layoutY="89.0" prefHeight="44.0" prefWidth="223.0" text="Force Level : 1/10" textFill="#f8d300" wrapText="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

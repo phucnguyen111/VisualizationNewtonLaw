@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" prefHeight="817.0" prefWidth="1550.0" style="-fx-background-color: #7ad9ff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutY="661.0" prefHeight="156.0" prefWidth="1550.0" style="-fx-background-color: ffef95; -fx-border-color: ffa05d;">
+         <children>
+            <Button fx:id="resetButton" layoutX="1403.0" layoutY="54.0" mnemonicParsing="false" onAction="#reset" prefHeight="61.0" prefWidth="127.0" style="-fx-background-color: ffa05d; -fx-border-color: ffa05d;" stylesheets="@../main/application.css" text="Reset" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="23.0" />
+               </font></Button>
+            <Button fx:id="kickButton" layoutX="555.0" layoutY="56.0" mnemonicParsing="false" onAction="#kick" prefHeight="61.0" prefWidth="127.0" style="-fx-background-color: ffa05d; -fx-border-color: ffa05d;" stylesheets="@../main/application.css" text="Kick" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="23.0" />
+               </font></Button>
+            <Label layoutX="48.0" layoutY="39.0" text="Ball's weigh (g)">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font></Label>
+            <Label layoutX="29.0" layoutY="94.0" text="Initial Velocity(m/s)">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font></Label>
+            <TextField fx:id="weightTextField" layoutX="258.0" layoutY="30.0" prefHeight="42.0" prefWidth="200.0" style="-fx-background-color: ffffff; -fx-border-color: ffa05d;" />
+            <TextField fx:id="initialVelocityTextField" layoutX="258.0" layoutY="90.0" prefHeight="42.0" prefWidth="200.0" style="-fx-background-color: ffffff; -fx-border-color: ffa05d;" />
+            <Label layoutX="930.0" layoutY="45.0" prefHeight="23.0" prefWidth="141.0" text="Acceleration">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font></Label>
+            <TextField fx:id="accelerationTextField" layoutX="1107.0" layoutY="35.0" prefHeight="42.0" prefWidth="200.0" style="-fx-background-color: ffffff; -fx-border-color: ffa05d;" />
+            <Label layoutX="937.0" layoutY="88.0" text="Force on ball">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font></Label>
+            <TextField fx:id="forceTextField" layoutX="1107.0" layoutY="85.0" prefHeight="42.0" prefWidth="200.0" style="-fx-background-color: ffffff; -fx-border-color: ffa05d;" />
+         </children>
+      </AnchorPane>
+      <Rectangle fx:id="wall" arcHeight="5.0" arcWidth="5.0" fill="#ff6a6a" height="665.0" layoutX="1235.0" layoutY="-4.0" stroke="#fc5454" strokeType="INSIDE" width="316.0" />
+   </children>
+</AnchorPane>
